@@ -6,8 +6,8 @@ spring:
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/money_manager
-    username: money_manager
-    password: pass_money_manager
+    username:
+    password:
     hikari:
       connection-timeout: 30000
       validation-timeout: 5000
