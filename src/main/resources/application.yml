@@ -1,12 +1,13 @@
 spring:
   application:
-    name: "url-shortener-service"
+    name: "money-manager-service"
   jpa:
     show-sql: true
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/mock
-    username: mock
+    url: jdbc:postgresql://localhost:5432/money_manager
+    username:
+    password:
     hikari:
       connection-timeout: 30000
       validation-timeout: 5000
@@ -19,6 +20,11 @@ spring:
     default-property-inclusion: NON_NULL
 
 server:
-  port: 8080
+  port: 8085
   error:
     include-message: always
+
+money-manager:
+  app:
+    jwtSecret: jWTS3cr3tKeY
+    jwtExpirationMs: 86400000
