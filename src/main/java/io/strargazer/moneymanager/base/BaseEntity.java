@@ -27,4 +27,7 @@ public class BaseEntity implements Serializable {
     )
     @UpdateTimestamp
     private Timestamp updatedAt;
+
+    private String createdBy;
+    private String updatedBy;
 }
